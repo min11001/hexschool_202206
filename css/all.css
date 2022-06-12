@@ -1,0 +1,260 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  color: #3F5D45;
+  text-align: center;
+}
+
+a, a:link, a:visited {
+  color: #3F5D45;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+body {
+  font-family: PingFangSC-Semibold, "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+.header {
+  max-width: 940px;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  margin: 30px 0px;
+  justify-content: space-between;
+}
+
+.nav .logo a {
+  background: url("../img/logo-all-dark.svg") no-repeat center/cover;
+  width: 220px;
+  height: 40px;
+  text-indent: 101%;
+  /*首行縮排*/
+  overflow: hidden;
+  /*自動隱藏超出的文字或圖片*/
+  white-space: nowrap;
+}
+
+.nav .menu {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+}
+
+.nav .menu .item a {
+  padding: 10px 30px;
+  font-weight: medium;
+}
+
+.nav .menu a:hover {
+  opacity: 0.6;
+}
+
+.nav .menu .cart img {
+  padding: 10px 20px;
+}
+
+.main, .banner, .page {
+  max-width: 940px;
+  margin: auto;
+}
+
+.banner {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.banner h2 {
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 55px;
+  right: 40px;
+  font-size: 36px;
+  color: #2C4832;
+  text-indent: -15px;
+  font-family: 'Noto Serif TC', serif;
+  line-height: 48px;
+  letter-spacing: 6px;
+}
+
+.main {
+  display: flex;
+}
+
+.sidebar {
+  width: 300px;
+  font-size: 24px;
+}
+
+.sidebar .category, .sidebar .item a {
+  padding: 16px 0px;
+}
+
+.sidebar .category {
+  color: #fff;
+  background-color: #3F5D45;
+}
+
+.sidebar .item {
+  border: 1px solid #EAF0ED;
+}
+
+.sidebar .item:hover {
+  background-color: #EAF0ED;
+}
+
+.product {
+  width: 640px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product .card {
+  width: 300px;
+  margin: 0 0 20px 20px;
+}
+
+.cardimg {
+  background-image: url(../img/p-1.png);
+  height: 315px;
+  position: relative;
+}
+
+.cardimg .classic {
+  writing-mode: vertical-lr;
+  position: absolute;
+  left: 20px;
+  letter-spacing: 5px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3F5D45;
+  padding: 10px;
+}
+
+.cardimg a {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.cardimg a:hover {
+  opacity: 0.6;
+}
+
+.cardinfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cardinfo .cardname {
+  padding: 14px 33px;
+  border: 1px solid #EAF0ED;
+  width: 60%;
+}
+
+.cardinfo .price {
+  padding: 14px 20px 14px 25px;
+  border: 1px solid #EAF0ED;
+  width: 40%;
+}
+
+.card_cart {
+  padding: 16px 90px;
+  font-size: 24px;
+  max-width: 100%;
+  background-color: #EAF0ED;
+  font-weight: bold;
+}
+
+.card_cart:hover {
+  opacity: 0.6;
+}
+
+.page {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page a {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #EAF0ED;
+  line-height: 60px;
+}
+
+.page .page_change a:hover {
+  background-color: #EAF0ED;
+}
+
+.page .page_number a:hover {
+  background-color: #3F5D45;
+  color: #fff;
+}
+/*# sourceMappingURL=all.css.map */

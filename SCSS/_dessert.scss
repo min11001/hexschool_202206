@@ -1,0 +1,117 @@
+.main,.banner,.page{
+    max-width: 940px;
+    margin: auto;
+}
+.banner{
+    position: relative;
+    margin-bottom: 60px;
+    & h2{
+        writing-mode: vertical-rl;
+        position: absolute;
+        top: 55px;
+        right: 40px;
+        font-size: $text-lg;
+        color: #2C4832;
+        text-indent: -15px;
+        font-family: 'Noto Serif TC', serif;
+        line-height: 48px;
+        letter-spacing: 6px;
+    }
+}
+.main{
+    display: flex;
+}
+// 側邊選單
+.sidebar{
+    width: 300px;
+    font-size: $text-md;
+    & .category,.item a{
+        padding: 16px 0px;
+    }
+    & .category{
+       color:#fff;
+       background-color: $primary-color;
+    }
+    & .item{
+        border: 1px solid $secondary-color;
+        &:hover{
+            background-color: $secondary-color;
+        }
+    }
+}
+// 產品卡
+.product{
+    width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    & .card{
+        width: 300px;
+        margin: 0 0 20px 20px;
+    }
+}
+
+.cardimg{
+    background-image: url(../img/p-1.png);
+    height: 315px;
+    position: relative;
+    & .classic{
+        writing-mode: vertical-lr;
+        position: absolute;
+        left: 20px;
+        letter-spacing: 5px;
+        font-size: $text-base;
+        color: #fff;
+        background-color: $primary-color;
+        padding: 10px;
+    }
+    & a{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+}
+.cardinfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & .cardname{
+        padding: 14px 33px;
+        border: 1px solid $secondary-color;
+        width: 60%;
+    }
+    & .price{
+        padding: 14px 20px 14px 25px;
+        border: 1px solid $secondary-color;
+        width: 40%;
+    }
+}
+.card_cart{
+    padding: 16px 90px;
+    font-size: $text-md;
+    max-width: 100%;
+    background-color: $secondary-color;
+    font-weight: bold;
+    &:hover{
+        opacity: 0.6;
+    }
+}
+.page{
+    display: flex;
+    justify-content: flex-end;
+    & a{
+        width: 60px;
+        height: 60px;
+        border: 1px solid $secondary-color;
+        line-height: 60px;
+    }
+    & .page_change a:hover{
+        background-color: $secondary-color;
+    }
+    & .page_number a:hover{
+        background-color: $primary-color;
+        color: #fff;
+    }
+}

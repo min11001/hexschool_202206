@@ -1,0 +1,33 @@
+// 導覽列
+.header{
+    max-width: 940px;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    margin: 30px 0px;
+    justify-content: space-between;
+    & .logo a{
+        background: url("../img/logo-all-dark.svg") no-repeat center / cover;
+        width: 220px;
+        height: 40px;
+        text-indent:101%; /*首行縮排*/
+        overflow:hidden; /*自動隱藏超出的文字或圖片*/
+        white-space:nowrap;
+    }
+    & .menu{
+        display: flex;
+        font-size: 16px;
+        align-items: center;
+        & .item a{
+            padding:10px 30px;
+            font-weight: medium;
+        }
+        & a:hover{
+            opacity: 0.6;
+        }
+        & .cart img{
+            padding: 10px 20px;
+        }
+    }
+}
